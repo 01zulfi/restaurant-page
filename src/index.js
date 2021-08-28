@@ -1,5 +1,7 @@
-console.log('working');
+import appendHomePage from './pageModules/homeModule.js'
+import appendMenuPage from "./pageModules/menuModule";
 
-import {homeModule} from "./homeModule";
 
-homeModule.appendContent();
+
+appendHomePage();
+appendMenuPage();
