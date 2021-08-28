@@ -1,10 +1,11 @@
 const content = document.querySelector('#content');
+const homeContent = document.createElement('div');
 const h1 = document.createElement('h1');
 const navButtons = document.createElement('div');
 const homeButton = document.createElement('button');
 const menuButton = document.createElement('button');
 const contactButton = document.createElement('button');
-const homeContent = document.createElement('div');
+
 const p = document.createElement('p');
 
 h1.textContent = 'The Restaurant';
@@ -22,8 +23,8 @@ p.textContent = 'The most succulent experience in town.';
 
 function appendHomePage() {
     navButtons.append(homeButton, menuButton, contactButton);
-    homeContent.append(p);
-    content.append(h1, navButtons, homeContent);
+    homeContent.append(h1, navButtons, p);
+    content.append(homeContent);
 }
 
 export default appendHomePage
