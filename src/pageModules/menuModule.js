@@ -1,4 +1,4 @@
-const content = document.querySelector('#content');
+const pageContent = document.querySelector('#content');
 const menuContent = document.createElement('div');
 const section1 = document.createElement('div');
 const section2 = document.createElement('div');
@@ -18,7 +18,7 @@ function appendMenuPage() {
     section1.append(itemA, itemB);
     section2.append(itemC, itemD);
     menuContent.append(section1, section2);
-    content.append(menuContent);
+    pageContent.append(menuContent);
 }
   
-export default appendMenuPage
+export default appendMenuPage;

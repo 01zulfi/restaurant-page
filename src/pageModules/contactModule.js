@@ -1,4 +1,4 @@
-const content = document.querySelector('#content');
+const pageContent = document.querySelector('#content');
 
 const contactContent = document.createElement('div');
 const contactForm = document.createElement('form');
@@ -24,7 +24,7 @@ function appendContactPage() {
     contactForm.append(userNameLabel, userName, userEmailLabel, userEmail, textAreaLabel, textArea);
     contactInfo.append(contactNum, contactEmail);
     contactContent.append(contactInfo, contactForm);
-    content.append(contactContent);
+    pageContent.append(contactContent);
 }
 
-export default appendContactPage
+export default appendContactPage;
