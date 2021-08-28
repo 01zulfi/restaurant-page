@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const pageContent = document.querySelector('#content');
 const headerContent = document.createElement('div');
 const h1 = document.createElement('h1');
@@ -18,7 +19,7 @@ contactButton.textContent = 'Contact';
 function appendHeader() {
     navButtons.append(homeButton, menuButton, contactButton);
     headerContent.append(h1, navButtons);
-    pageContent.append(headerContent);
+    body.insertBefore(headerContent, pageContent);
 }
 
 export default appendHeader;
