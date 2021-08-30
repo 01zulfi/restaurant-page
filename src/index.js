@@ -1,6 +1,6 @@
 import appendHeader from './pageModules/headerModule.js';
 import {HomeModule} from './pageModules/homeModule.js'
-import appendMenuPage from "./pageModules/menuModule.js";
+import {MenuModule} from "./pageModules/menuModule.js";
 import appendContactPage from './pageModules/contactModule.js'
 
 
@@ -24,7 +24,7 @@ const SwitchTabs = (() => {
     })
     menuButton.addEventListener('click', () => {
         clearPage();
-        appendMenuPage();
+        MenuModule.attach();
     })
     contactButton.addEventListener('click', () => {
         clearPage();
