@@ -1,7 +1,7 @@
-import appendHeader from './pageModules/headerModule.js';
-import {HomeModule} from './pageModules/homeModule.js'
-import {MenuModule} from "./pageModules/menuModule.js";
-import appendContactPage from './pageModules/contactModule.js'
+import appendHeader from './PageModules/HeaderModule.js';
+import {HomeModule} from './PageModules/HomeModule.js'
+import {MenuModule} from "./PageModules/MenuModule.js";
+import {ContactModule} from './PageModules/ContactModule.js'
 
 
 
@@ -28,7 +28,7 @@ const SwitchTabs = (() => {
     })
     contactButton.addEventListener('click', () => {
         clearPage();
-        appendContactPage();
+        ContactModule.attach();
     })
 
 
