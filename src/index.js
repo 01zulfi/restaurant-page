@@ -1,4 +1,4 @@
-import appendHeader from './PageModules/HeaderModule.js';
+import {HeaderModule} from './PageModules/HeaderModule.js';
 import {HomeModule} from './PageModules/HomeModule.js'
 import {MenuModule} from "./PageModules/MenuModule.js";
 import {ContactModule} from './PageModules/ContactModule.js'
@@ -6,7 +6,7 @@ import {ContactModule} from './PageModules/ContactModule.js'
 
 
 const SwitchTabs = (() => {
-    appendHeader();
+    HeaderModule.attach();
     HomeModule.attach();
 
     const pageContent = document.querySelector('#content');
