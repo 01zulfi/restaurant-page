@@ -6,30 +6,36 @@ import {ContactModule} from './PageModules/ContactModule.js'
 
 
 const SwitchTabs = (() => {
-    HeaderModule.attach();
-    HomeModule.attach();
-
-    const pageContent = document.querySelector('#content');
-    const homeButton = document.querySelector('#homeButton');
-    const menuButton = document.querySelector('#menuButton');
-    const contactButton = document.querySelector('#contactButton');
-
-    function clearPage() {
-        pageContent.textContent = '';
-    }
-
-    homeButton.addEventListener('click', () => {
-        clearPage();
-        HomeModule.attach();
-    })
-    menuButton.addEventListener('click', () => {
-        clearPage();
-        MenuModule.attach();
-    })
-    contactButton.addEventListener('click', () => {
-        clearPage();
-        ContactModule.attach();
-    })
-
-
+    const switchTabsObject = {
+        init: function() {
+            HeaderModule.attach();
+            HomeModule.attach();
+            this.cacheDom();
+            this.bindEvents();
+        },
+        cacheDom: function() {
+            this.pageContent = document.querySelector('#content');
+            this.homeButton = document.querySelector('#homeButton');
+            this.menuButton = document.querySelector('#menuButton');
+            this.contactButton = document.querySelector('#contactButton');
+        },
+        clearPage: function() {
+            this.pageContent.textContent = '';
+        },
+        bindEvents: function() {
+            this.homeButton.addEventListener('click', () => {
+                this.clearPage();
+                HomeModule.attach();
+            });
+            this.menuButton.addEventListener('click', () => {
+                this.clearPage();
+                MenuModule.attach();
+            });
+            this.contactButton.addEventListener('click', () => {
+                this.clearPage();
+                ContactModule.attach();
+            });
+        },   
+    };
+    switchTabsObject.init();
 })();
