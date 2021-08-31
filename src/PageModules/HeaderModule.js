@@ -23,10 +23,10 @@ const HeaderModule = (() => {
             this.homeButton.id = 'homeButton';
             this.menuButton.id = 'menuButton';
             this.contactButton.id = 'contactButton';
-
+            this.headerContent.id = 'header';
         },
         setContent: function() {
-            this.h1.textContent = 'The Restaurant';
+            this.h1.textContent = 'Savory';
             this.homeButton.textContent = 'Home';
             this.menuButton.textContent = 'Menu';
             this.contactButton.textContent = 'Contact';

@@ -1,0 +1,34 @@
+$desktop-breakpoint: 992px;
+$tablet-breakpoint: 768px;
+$interior-img: url('/src/images/interior.png');
+
+@font-face {
+    font-family: 'Unlock';
+    src: url('/src/fonts/Unlock-Regular.ttf');
+}
+
+
+body {
+    background-color: #B45008;
+    background-image: $interior-img;
+}
+
+#header {
+    background-color: #664228;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-size: 100px;
+        font-family: 'Unlock';
+        color: white;
+    }
+}
+
+
+@media (min-width: $tablet-breakpoint) {
+    #header {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
