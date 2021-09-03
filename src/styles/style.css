@@ -36,9 +36,14 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  #header #navButtons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 #header #homeButton {
@@ -68,6 +73,15 @@ body {
   padding: 3px;
 }
 
+@media (min-width: 768px) {
+  #header #homeButton {
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 1vw;
+    margin-left: 2vw;
+  }
+}
+
 #header #menuButton {
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
@@ -95,6 +109,15 @@ body {
   padding: 3px;
 }
 
+@media (min-width: 768px) {
+  #header #menuButton {
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 1vw;
+    margin-left: 2vw;
+  }
+}
+
 #header #contactButton {
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
@@ -120,6 +143,15 @@ body {
 
 #header #contactButton img {
   padding: 3px;
+}
+
+@media (min-width: 768px) {
+  #header #contactButton {
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 1vw;
+    margin-left: 2vw;
+  }
 }
 
 #frontDiv {
@@ -225,6 +257,34 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-left: 20px;
+    padding-right: 3vw;
+  }
+  #frontDiv {
+    height: 86vh;
+    background-size: 100% 100%;
+  }
+  #frontDiv #welcomeDiv {
+    padding: 3vw;
+  }
+  #frontDiv #welcomeDiv #welcomeDivText2 {
+    font-size: 23vh;
+  }
+  #frontDiv #mottoDiv {
+    font-size: 4vh;
+    padding: 3vw;
+  }
+  #messageDiv {
+    height: 77vh;
+    background-size: 100% 100%;
+  }
+  #messageDiv #messageDivText1 {
+    font-size: 8vh;
+    padding: 3vw;
+  }
+  #messageDiv #messageDivText2 {
+    font-size: 5vh;
+    padding-left: 2vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

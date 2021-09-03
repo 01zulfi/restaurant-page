@@ -37,7 +37,7 @@ const HomeModule = (() => {
             this.welcomeDivText1.textContent = 'Welcome to';
             this.welcomeDivText2.textContent = 'Savory';
             this.mottoText.textContent = 'The most succulent experience in town.';
-            this.messageDivText1.textContent = 'For the love of cooking.';
+            this.messageDivText1.textContent = 'For the love of cooking';
             this.messageDivText2.textContent = `Cooking is art and food is our passion.
                                                 From choosing the best ingredients to the
                                                 presentation, everything is handled with utmost care.`
