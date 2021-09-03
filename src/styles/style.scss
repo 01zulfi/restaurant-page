@@ -3,16 +3,22 @@ $tablet-breakpoint: 768px;
 $interior-img: url('/src/images/interior.png');
 
 @mixin buttons() {
-    background-color: transparent;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    padding: 10px;
     color: black;
-    border: 2px solid brown;
+    border: 0px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    font-size: 17px;
+    font-size: 17px; 
+    &:hover {
+        cursor: pointer;
+    }
+    img {
+        padding: 3px;
+    }
 }
-
-
 
 @font-face {
     font-family: 'Unlock';
@@ -22,34 +28,30 @@ $interior-img: url('/src/images/interior.png');
 
 body {
     background-color: #B45008;
-    background-image: $interior-img;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
 }
 
+
 #header {
-    background-color: #664228;
+    background-color: #7e4c29;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: 2px 2px black;
     h1 {
         font-size: 80px;
         font-family: 'Unlock';
         color: white;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
     }
     #navButtons {
         width: 100%;
-        margin-top: 10px;
-        padding: 10px;
-        border-top: 2px solid #B45008;
         display: flex;
         justify-content: space-around;
         flex-grow: 1;
     }
     #homeButton {
         @include buttons(); 
+  
     }
     #menuButton {
         @include buttons();
@@ -58,9 +60,6 @@ body {
         @include buttons();
     }
 }
-
-
-
 
 @media (min-width: $tablet-breakpoint) {
     #header {

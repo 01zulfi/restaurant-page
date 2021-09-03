@@ -5,14 +5,10 @@
 
 body {
   background-color: #B45008;
-  background-image: url("/src/images/interior.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
 }
 
 #header {
-  background-color: #664228;
+  background-color: #7e4c29;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,20 +19,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-shadow: 2px 2px black;
 }
 
 #header h1 {
   font-size: 80px;
   font-family: 'Unlock';
   color: white;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 #header #navButtons {
   width: 100%;
-  margin-top: 10px;
-  padding: 10px;
-  border-top: 2px solid #B45008;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,9 +42,11 @@ body {
 }
 
 #header #homeButton {
-  background-color: transparent;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  padding: 10px;
   color: black;
-  border: 2px solid brown;
+  border: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,12 +58,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 17px;
+}
+
+#header #homeButton:hover {
+  cursor: pointer;
+}
+
+#header #homeButton img {
+  padding: 3px;
 }
 
 #header #menuButton {
-  background-color: transparent;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  padding: 10px;
   color: black;
-  border: 2px solid brown;
+  border: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,10 +87,20 @@ body {
   font-size: 17px;
 }
 
+#header #menuButton:hover {
+  cursor: pointer;
+}
+
+#header #menuButton img {
+  padding: 3px;
+}
+
 #header #contactButton {
-  background-color: transparent;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  padding: 10px;
   color: black;
-  border: 2px solid brown;
+  border: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,6 +112,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 17px;
+}
+
+#header #contactButton:hover {
+  cursor: pointer;
+}
+
+#header #contactButton img {
+  padding: 3px;
 }
 
 @media (min-width: 768px) {
