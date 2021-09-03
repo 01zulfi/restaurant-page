@@ -122,6 +122,60 @@ body {
   padding: 3px;
 }
 
+#frontDiv {
+  background-image: url("/src/images/interior.png");
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#frontDiv #welcomeDiv {
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#frontDiv #welcomeDiv #welcomeDivText1 {
+  color: black;
+  font-size: 25px;
+}
+
+#frontDiv #welcomeDiv #welcomeDivText2 {
+  color: #B45008;
+  font-family: 'Unlock';
+  font-size: 80px;
+}
+
+#frontDiv #mottoDiv {
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
 @media (min-width: 768px) {
   #header {
     display: -webkit-box;
