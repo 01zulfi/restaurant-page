@@ -6,6 +6,9 @@
 body {
   background-color: #B45008;
   background-image: url("/src/images/interior.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 #header {
@@ -17,12 +20,82 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header h1 {
-  font-size: 100px;
+  font-size: 80px;
   font-family: 'Unlock';
   color: white;
+  padding-bottom: 5px;
+}
+
+#header #navButtons {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 2px solid #B45008;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#header #homeButton {
+  background-color: transparent;
+  color: black;
+  border: 2px solid brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+}
+
+#header #menuButton {
+  background-color: transparent;
+  color: black;
+  border: 2px solid brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+}
+
+#header #contactButton {
+  background-color: transparent;
+  color: black;
+  border: 2px solid brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
 }
 
 @media (min-width: 768px) {

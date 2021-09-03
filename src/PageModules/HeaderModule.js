@@ -17,6 +17,7 @@ const HeaderModule = (() => {
             this.homeButton = document.createElement('button');
             this.menuButton = document.createElement('button');
             this.contactButton = document.createElement('button');
+            this.i = document.createElement('img');
         },
         setId: function() {
             this.navButtons.id = 'navButtons';
@@ -24,6 +25,7 @@ const HeaderModule = (() => {
             this.menuButton.id = 'menuButton';
             this.contactButton.id = 'contactButton';
             this.headerContent.id = 'header';
+            this.i.src = '/src/icons/homeIcon.svg';
         },
         setContent: function() {
             this.h1.textContent = 'Savory';
@@ -34,6 +36,7 @@ const HeaderModule = (() => {
     };
     function appendContent() {
         headerObject.init();
+        this.homeButton.append(this.i);
         this.navButtons.append(this.homeButton, this.menuButton, this.contactButton);
         this.headerContent.append(this.h1, this.navButtons);
         this.body.insertBefore(this.headerContent, this.pageContent);
