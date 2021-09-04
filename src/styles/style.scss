@@ -2,6 +2,7 @@ $desktop-breakpoint: 992px;
 $tablet-breakpoint: 768px;
 $interior-img: url('/src/images/interior.png');
 $chef-img: url('/src/images/chef.png');
+$burger-img: url('/src/images/burger.png');
 
 @mixin buttons() {
     border-top-left-radius: 20%;
@@ -25,6 +26,15 @@ $chef-img: url('/src/images/chef.png');
         padding: 1vw;
         margin-left: 2vw;
     }
+}
+
+@mixin menuitem() {
+    height: 30vh;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 @font-face {
@@ -138,9 +148,51 @@ body {
     }
 }
 
+#menuContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    #itemA, #itemB, #itemC, #itemD, #itemE {
+       @include menuitem();
+    } 
+    #itemA {
+        background-image: $burger-img;
+        background-size: 100% 100%;
+
+    }
+    #itemB {
+        background-image: url('/src/images/coffee.jpg');
+        background-size: 100% 100%;
+    }
+    #itemC {
+        background-image: url(/src/images/seafood.png);
+        background-size: 100% 100%;
+    }
+    #itemD {
+        background-image: url(/src/images/dessert.jpg);
+        background-size: 100% 100%;
+    }
+    #itemE {
+        background-image: url(/src/images/foodTable.jpg);
+        background-size: 100% 100%;
+    }
+    #itemAText, #itemBText, #itemCText, #itemDText, #itemEText {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        padding: 15px;
+        font-size: 3vh;
+    }
+}
+
 
 
 @media (min-width: $tablet-breakpoint) {
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     #header {
         display: flex;
         flex-direction: row;
@@ -149,6 +201,7 @@ body {
     }
     #frontDiv {
         height: 86vh;
+        width: 95vw;
         background-size: 100% 100%;
         #welcomeDiv {
             padding: 3vw;
@@ -164,6 +217,7 @@ body {
     #messageDiv {
         height: 77vh;
         background-size: 100% 100%;
+        width: 95vw;
         #messageDivText1 {
             font-size: 8vh;
             padding: 3vw;

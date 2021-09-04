@@ -248,7 +248,80 @@ body {
   font-size: 15px;
 }
 
+#menuContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#menuContent #itemA, #menuContent #itemB, #menuContent #itemC, #menuContent #itemD, #menuContent #itemE {
+  height: 30vh;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+#menuContent #itemA {
+  background-image: url("/src/images/burger.png");
+  background-size: 100% 100%;
+}
+
+#menuContent #itemB {
+  background-image: url("/src/images/coffee.jpg");
+  background-size: 100% 100%;
+}
+
+#menuContent #itemC {
+  background-image: url(/src/images/seafood.png);
+  background-size: 100% 100%;
+}
+
+#menuContent #itemD {
+  background-image: url(/src/images/dessert.jpg);
+  background-size: 100% 100%;
+}
+
+#menuContent #itemE {
+  background-image: url(/src/images/foodTable.jpg);
+  background-size: 100% 100%;
+}
+
+#menuContent #itemAText, #menuContent #itemBText, #menuContent #itemCText, #menuContent #itemDText, #menuContent #itemEText {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  padding: 15px;
+  font-size: 3vh;
+}
+
 @media (min-width: 768px) {
+  #content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -262,6 +335,7 @@ body {
   }
   #frontDiv {
     height: 86vh;
+    width: 95vw;
     background-size: 100% 100%;
   }
   #frontDiv #welcomeDiv {
@@ -277,6 +351,7 @@ body {
   #messageDiv {
     height: 77vh;
     background-size: 100% 100%;
+    width: 95vw;
   }
   #messageDiv #messageDivText1 {
     font-size: 8vh;
