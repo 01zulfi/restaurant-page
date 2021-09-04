@@ -277,6 +277,14 @@ body {
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  #menuContent #itemA, #menuContent #itemB, #menuContent #itemC, #menuContent #itemD, #menuContent #itemE {
+    height: 50vh;
+    width: auto;
+    margin: 1vh;
+  }
+}
+
 #menuContent #itemA {
   background-image: url("/src/images/burger.png");
   background-size: 100% 100%;
@@ -307,6 +315,35 @@ body {
   border: 1px solid black;
   padding: 15px;
   font-size: 3vh;
+}
+
+@media (min-width: 768px) {
+  #menuContent #itemAText, #menuContent #itemBText, #menuContent #itemCText, #menuContent #itemDText, #menuContent #itemEText {
+    font-size: 4vh;
+  }
+}
+
+@media (min-width: 768px) {
+  #menuContent {
+    display: -ms-grid;
+    display: grid;
+    width: 90vw;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "burgers coffee" "seafood dessert" "more more";
+  }
+  #menuContent #itemE {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: more;
+    height: 60vh;
+  }
+  #menuContent #itemE #itemEText {
+    font-size: 8vh;
+  }
 }
 
 @media (min-width: 768px) {

@@ -35,6 +35,11 @@ $burger-img: url('/src/images/burger.png');
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    @media (min-width: $tablet-breakpoint) {
+        height: 50vh;
+        width: auto;
+        margin: 1vh;
+    }
 }
 
 @font-face {
@@ -182,6 +187,26 @@ body {
         border: 1px solid black;
         padding: 15px;
         font-size: 3vh;
+        @media (min-width: $tablet-breakpoint) {
+            font-size: 4vh;
+        }
+    }
+    @media (min-width: $tablet-breakpoint) {
+        display: grid;
+        width: 90vw;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "burgers coffee"
+                             "seafood dessert"
+                             "more more";
+
+        #itemE {
+            grid-area: more; 
+            height: 60vh;
+            #itemEText {
+                font-size: 8vh;
+            }
+        }
     }
 }
 
