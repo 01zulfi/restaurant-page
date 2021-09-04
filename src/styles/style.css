@@ -399,4 +399,12 @@ body {
     padding-left: 2vw;
   }
 }
+
+::-webkit-scrollbar {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #B45008;
+}
 /*# sourceMappingURL=style.css.map */
