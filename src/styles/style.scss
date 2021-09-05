@@ -35,6 +35,7 @@ $burger-img: url('/src/images/burger.png');
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    border: 2px solid black;
     @media (min-width: $tablet-breakpoint) {
         height: 50vh;
         width: auto;
@@ -85,14 +86,9 @@ body {
     }
 }
 
-// #header {
-//     background-image: url(https://cdn.pixabay.com/photo/2016/06/20/13/44/paper-1468883_960_720.jpg);
-// }
-
 #frontDiv {
     background-image: $interior-img;
     background-size: cover;
-    //box-shadow: 0px -2px 5px 2px black;
     height: 60vh;
     width: 100%;
     margin-top: 2vh;
@@ -202,13 +198,91 @@ body {
 
         #itemE {
             grid-area: more; 
-            height: 60vh;
+            height: 66vh;
             #itemEText {
                 font-size: 8vh;
             }
         }
     }
 }
+
+#contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh;
+    #contactMessageDiv {
+        height: 40vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        background-image: url('/src/images/glasses.jpg');
+        background-size: 100% 100%;
+        border: 2px solid black;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #contactMessageText {
+            padding: 15px;
+            border: 1px solid black;
+            font-size: 37px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    #contactInfo {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        background-color: #7e4c29;
+        align-items: center;
+        border: 2px solid black;
+        #contactInfoText1, #contactInfoText2 {
+            font-size: 20px;
+            margin: 10px;
+            color: white;
+        }
+        #contactDirect {
+            margin: 5px;
+            background-color: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #contactForm {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            margin: 1vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input, textArea {
+                background-color: #bb855e;
+                color: white;
+                border: 1px solid black;
+                font-size: 20px;
+            }
+            label {
+                font-size: 18px;
+                padding: 10px;
+            }
+            button {
+                margin: 10px;
+                padding: 10px;
+                background-color: sandybrown;
+                border: 1px solid black;
+                width: 25vw;
+                &:hover {
+                    transform: scale(1.2, 1.2);
+                    border: 2px solid black;
+                }
+            }
+        }
+    }
+}
+
+
 
 
 

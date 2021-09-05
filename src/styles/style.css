@@ -275,6 +275,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
+  border: 2px solid black;
 }
 
 @media (min-width: 768px) {
@@ -339,11 +340,132 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: more;
-    height: 60vh;
+    height: 66vh;
   }
   #menuContent #itemE #itemEText {
     font-size: 8vh;
   }
+}
+
+#contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1vh;
+}
+
+#contactContent #contactMessageDiv {
+  height: 40vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  background-image: url("/src/images/glasses.jpg");
+  background-size: 100% 100%;
+  border: 2px solid black;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactContent #contactMessageDiv #contactMessageText {
+  padding: 15px;
+  border: 1px solid black;
+  font-size: 37px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#contactContent #contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  background-color: #7e4c29;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+}
+
+#contactContent #contactInfo #contactInfoText1, #contactContent #contactInfo #contactInfoText2 {
+  font-size: 20px;
+  margin: 10px;
+  color: white;
+}
+
+#contactContent #contactInfo #contactDirect {
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactContent #contactInfo #contactForm {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  margin: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactContent #contactInfo #contactForm input, #contactContent #contactInfo #contactForm textArea {
+  background-color: #bb855e;
+  color: white;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+#contactContent #contactInfo #contactForm label {
+  font-size: 18px;
+  padding: 10px;
+}
+
+#contactContent #contactInfo #contactForm button {
+  margin: 10px;
+  padding: 10px;
+  background-color: sandybrown;
+  border: 1px solid black;
+  width: 25vw;
+}
+
+#contactContent #contactInfo #contactForm button:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  border: 2px solid black;
 }
 
 @media (min-width: 768px) {

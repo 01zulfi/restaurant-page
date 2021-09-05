@@ -40,7 +40,8 @@ const HomeModule = (() => {
             this.messageDivText1.textContent = 'For the love of cooking';
             this.messageDivText2.textContent = `Cooking is art and food is our passion.
                                                 From choosing the best ingredients to the
-                                                presentation, everything is handled with utmost care.`
+                                                presentation, everything is handled with utmost care.
+                                                Check out our menu and feel free to contact us.`
         }, 
     };
     function appendContent() {
