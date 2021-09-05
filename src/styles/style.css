@@ -387,6 +387,16 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+@media (min-width: 768px) {
+  #contactContent #contactMessageDiv {
+    width: 95vw;
+    height: 70vh;
+  }
+  #contactContent #contactMessageDiv #contactMessageText {
+    font-size: 6vw;
+  }
+}
+
 #contactContent #contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,13 +469,69 @@ body {
   padding: 10px;
   background-color: sandybrown;
   border: 1px solid black;
-  width: 25vw;
+  width: 15vw;
 }
 
 #contactContent #contactInfo #contactForm button:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+  #contactContent #contactInfo {
+    width: 95vw;
+    display: -ms-grid;
+    display: grid;
+    padding-top: 2vh;
+    -ms-grid-rows: 5vh 55vh;
+        grid-template-rows: 5vh 55vh;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "text1 text2" "info form";
+  }
+  #contactContent #contactInfo #contactInfoText1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  #contactContent #contactInfo #contactInfoText2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: text2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  #contactContent #contactInfo #contactDirect {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: info;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 5vh;
+    padding: 1vw;
+  }
+  #contactContent #contactInfo #contactForm {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: form;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -496,6 +562,7 @@ body {
     height: 86vh;
     width: 95vw;
     background-size: 100% 100%;
+    border: 2px solid black;
   }
   #frontDiv #welcomeDiv {
     padding: 3vw;
@@ -508,6 +575,7 @@ body {
     padding: 3vw;
   }
   #messageDiv {
+    border: 2px solid black;
     height: 77vh;
     background-size: 100% 100%;
     width: 95vw;

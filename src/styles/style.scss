@@ -46,13 +46,11 @@ $burger-img: url('/src/images/burger.png');
 @font-face {
     font-family: 'Unlock';
     src: url('/src/fonts/Unlock-Regular.ttf');
-
 }
 
 body {
     background-color: #B45008;
 }
-
 
 #header {
     background-color: #7e4c29;
@@ -195,7 +193,6 @@ body {
         grid-template-areas: "burgers coffee"
                              "seafood dessert"
                              "more more";
-
         #itemE {
             grid-area: more; 
             height: 66vh;
@@ -227,6 +224,13 @@ body {
             border: 1px solid black;
             font-size: 37px;
             background-color: rgba(255, 255, 255, 0.8);
+        }
+        @media (min-width: $tablet-breakpoint) {
+            width: 95vw;
+            height: 70vh;
+            #contactMessageText {
+                font-size: 6vw;
+            }
         }
     }
     #contactInfo {
@@ -272,19 +276,46 @@ body {
                 padding: 10px;
                 background-color: sandybrown;
                 border: 1px solid black;
-                width: 25vw;
+                width: 15vw;
                 &:hover {
                     transform: scale(1.2, 1.2);
                     border: 2px solid black;
                 }
             }
         }
+        @media (min-width: $tablet-breakpoint) {
+            width: 95vw;
+            display: grid;
+            padding-top: 2vh;
+            grid-template-rows: 5vh 55vh;
+            grid-template-columns: auto auto;
+            grid-template-areas: "text1 text2"
+                                "info form";
+            #contactInfoText1 {
+                grid-area: text1;
+                justify-self: center;
+                align-self: end;
+            }
+            #contactInfoText2 {
+                grid-area: text2;
+                justify-self: center;
+                align-self: end;
+            }
+            #contactDirect {
+                grid-area: info;
+                justify-self: center;
+                align-self: center;
+                font-size: 5vh;
+                padding: 1vw;
+            }
+            #contactForm {
+                grid-area: form;
+                justify-self: center;
+                align-self: center;
+            }
+        }
     }
 }
-
-
-
-
 
 @media (min-width: $tablet-breakpoint) {
     #content {
@@ -302,6 +333,7 @@ body {
         height: 86vh;
         width: 95vw;
         background-size: 100% 100%;
+        border: 2px solid black;
         #welcomeDiv {
             padding: 3vw;
             #welcomeDivText2 {
@@ -314,6 +346,7 @@ body {
         }
     }
     #messageDiv {
+        border: 2px solid black;
         height: 77vh;
         background-size: 100% 100%;
         width: 95vw;
