@@ -5,6 +5,7 @@ const ContactModule = (() => {
             this.createElements();
             this.setId();
             this.setContent();
+            this.bindEvents();
         },
         cacheDom: function() {
             this.pageContent = document.querySelector('#content');
@@ -49,6 +50,13 @@ const ContactModule = (() => {
             this.userEmailLabel.textContent = "Email: ";
             this.textAreaLabel.textContent = "Your message: ";
             this.submitButton.textContent = 'Send';
+        },
+        submitForm: function(e) {
+            e.preventDefault();
+            this.reset();
+        },
+        bindEvents: function() {
+            this.contactForm.addEventListener('submit', this.submitForm);
         },
     };
     function appendContent() {
