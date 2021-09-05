@@ -1,3 +1,7 @@
+import homeIcon from '/src/icons/homeIcon.svg'
+import menuIcon from '/src/icons/menuIcon.svg'
+import contactIcon from '/src/icons/contactIcon.svg'
+
 const HeaderModule = (() => {
     const headerObject = {
         init: function() {
@@ -6,10 +10,12 @@ const HeaderModule = (() => {
             this.setId();
             this.bindEvents();
             this.setContent();
+            this.createFavicon();
         },
         cacheDom: function() {
             this.body = document.querySelector('body');
             this.pageContent = document.querySelector('#content');
+            this.head = document.querySelector('head');
         },
         createElements: function() {
             this.headerContent = document.createElement('div');
@@ -21,6 +27,13 @@ const HeaderModule = (() => {
             this.homeIcon = document.createElement('img');
             this.menuIcon = document.createElement('img');
             this.contactIcon = document.createElement('img');
+        },
+        createFavicon: function() {
+            this.link = document.createElement('link');
+            this.link.type = 'image/png';
+            this.link.rel = 'icon';
+            this.link.href = menuIcon;
+            this.head.append(this.link);
         },
         setId: function() {
             this.navButtons.id = 'navButtons';
@@ -34,9 +47,9 @@ const HeaderModule = (() => {
             this.homeButton.textContent = 'Home';
             this.menuButton.textContent = 'Menu';
             this.contactButton.textContent = 'Contact';
-            this.homeIcon.src = '/src/icons/homeIcon.svg';
-            this.menuIcon.src = '/src/icons/menuIcon.svg';
-            this.contactIcon.src = '/src/icons/contactIcon.svg';
+            this.homeIcon.src = homeIcon;
+            this.menuIcon.src = menuIcon;
+            this.contactIcon.src = contactIcon;
         },
         toggleFocus: function() {
             if (this === window || this === headerObject.homeButton) {
