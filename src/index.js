@@ -2,8 +2,8 @@ import {HeaderModule} from './PageModules/HeaderModule.js';
 import {HomeModule} from './PageModules/HomeModule.js'
 import {MenuModule} from "./PageModules/MenuModule.js";
 import {ContactModule} from './PageModules/ContactModule.js'
-
-
+import './styles/style.css';
+import './styles/reset.css';
 
 const SwitchTabs = (() => {
     const switchTabsObject = {
