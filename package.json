@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xari4808/restaurant-page.git"
+    "url": "git+https://github.com/01zulfi/restaurant-page.git"
   },
   "author": "xari",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xari4808/restaurant-page/issues"
+    "url": "https://github.com/01zulfi/restaurant-page/issues"
   },
-  "homepage": "https://github.com/xari4808/restaurant-page#readme",
+  "homepage": "https://github.com/01zulfi/restaurant-page#readme",
   "devDependencies": {
     "css-loader": "^6.2.0",
     "style-loader": "^3.2.1",
